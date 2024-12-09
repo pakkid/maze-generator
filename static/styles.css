@@ -123,7 +123,7 @@ label {
     left: 0;
     z-index: 9;
     pointer-events: none;
-    animation: fadeIn 1s ease-in-out, fadeOut 1s ease-in-out 4s forwards;
+    animation: fadeIn 1s ease-in-out, fadeOut 1s ease-in-out 7s forwards;
     border: 0cm;
 }
 
