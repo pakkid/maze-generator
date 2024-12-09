@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Generator and Solver</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <canvas id="mazeCanvas"></canvas>
+        <div class="controls">
+            <button id="generateMaze">Generate Maze</button>
+            <button id="solveMaze">Solve Maze</button>
+            <label for="mazeSize">Maze Size:</label>
+            <input type="range" id="mazeSize" min="5" max="50" value="20">
+            <label for="mazeSimplicity">Maze Simplicity:</label>
+            <input type="range" id="mazeSimplicity" min="1" max="10" value="5">
+        </div>
+    </div>
+    <div id="winScreen" class="hidden">
+        <h1>Congratulations!</h1>
+        <p>You solved the maze in <span id="timeTaken"></span> seconds!</p>
+        <button id="generateAnother">Generate Another</button>
+    </div>
+    <a href="https://github.com/pakkid/maze-generator/" target="_blank" id="viewSourceCode">
+        <span class="iconify" data-icon="mdi:github" data-inline="false"></span>
+    </a>
+    <script src="static/script.js"></script>
+</body>
+</html>
